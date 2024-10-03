@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="java.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <img
+              class="logo"
+              src="images/logo2.png"
+              alt="Een document met de afbeelding van een explosie met de tekst Het Rampen Dossier ernaast."
+            />
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="afleveringen.html">Afleveringen</a></li>
+          <li><a href="over-ons.html">Over ons</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Home</h1>
+      <section class="intro">
+        <p>
+          Welkom bij <strong>Het Rampen Dossier</strong>. De podcast die een
+          diepere kijk neemt in de meest rampzalige historische gebeurtenissen.
+          Elke week halen wij een nieuwe ramp uit ons dossier om te bespreken
+          voor jullie genot.
+        </p>
+        <p>
+          Verwacht indrukwekkende feiten, analyses en
+          <i>verhalen van verwoesting</i>.
+        </p>
+      </section>
+      <h2 class="afleveringType">Recente afleveringen:</h2>
+      <ul class="cardWrapper">
+        <li class="card">
+          <img
+            class="thumbnail"
+            src="images/thumbnail_chernobyl.jpg"
+            alt="Thumbnail met de tekst De Chernobyl Tragedie met als achtergrond een man in een hazmat-pak die Chernobyl schoonspuit."
+          />
+          <h2 class="cardHeader">De Chernobyl Tragedie</h2>
+          <br /><br />
+          <ul>
+            <li>
+              <p><strong>Onderwerp:</strong> Kernramp</p>
+            </li>
+            <li>
+              <p><strong>Lengte:</strong> 114 minuten</p>
+            </li>
+            <li>
+              <p><strong>Datum:</strong> 24-09-2024</p>
+            </li>
+          </ul>
+          <button>Afspelen</button>
+        </li>
+        <li class="card">
+          <img
+            class="thumbnail"
+            src="images/thumbnail_fukushima.jpg"
+            alt="Thumbnail met de tekst Nucleaire aardbeving: Het verhaal van Fukushima met als achtergrond een luchtfoto van de Fukushima kerncentrale."
+          />
+          <h2 class="cardHeader">
+            Nucleaire aardbeving: Het verhaal van Fukushima
+          </h2>
+          <ul>
+            <li>
+              <p><strong>Onderwerp:</strong> Kernramp</p>
+            </li>
+            <li>
+              <p><strong>Lengte:</strong> 92 minuten</p>
+            </li>
+            <li>
+              <p><strong>Datum:</strong> 16-09-2024</p>
+            </li>
+          </ul>
+          <button>Afspelen</button>
+        </li>
+        <li class="card">
+          <img
+            class="thumbnail"
+            src="images/thumbnail_haiti.jpg"
+            alt="Thumbnail met de tekst Verwoesting in Haïti met als achtergond gebouwen die zijn ingestort door een aardbeving met bewoners eromheen."
+          />
+          <h2 class="cardHeader">Verwoesting in Haïti</h2>
+          <br /><br />
+          <ul>
+            <li>
+              <p><strong>Onderwerp:</strong> Natuurramp</p>
+            </li>
+            <li>
+              <p><strong>Lengte:</strong> 77 minuten</p>
+            </li>
+            <li>
+              <p><strong>Datum:</strong> 10-09-2024</p>
+            </li>
+          </ul>
+          <button>Afspelen</button>
+        </li>
+      </ul>
+
+      <h2 class="afleveringType">Nieuwste merchandise:</h2>
+
+      <ul class="cardWrapper">
+        <li class="card">
+          <img
+            class="thumbnail"
+            src="images/koffiebeker.jpg"
+            alt="Afbeelding van een beige koffiebeker met een bruin deksel en het logo van Het Rampen Dossier erop."
+          />
+          <h2 class="cardHeader">Rampen Dossier Koffiebeker</h2>
+          <p class="merchText"><strong>Prijs:</strong> €8,99</p>
+          <p class="merchText">
+            <strong>Formaat:</strong>
+            <select name="formaat" class="optie">
+              <option value="180ml">180ml</option>
+              <option value="220ml">220ml</option>
+              <option value="300ml">300ml</option>
+            </select>
+          </p>
+          <p class="merchText">Op voorraad</p>
+          <button onclick="winkelmand()">Toevoegen aan winkelmandje</button>
+        </li>
+        <li class="card">
+          <img
+            class="thumbnail"
+            src="images/sokken.jpg"
+            alt="Afbeelding van sokken met de tekst Het Rampen Dossier op de enkel en een vorm van een explosie bij de voet."
+          />
+          <h2 class="cardHeader">Rampen Dossier Sokken</h2>
+          <br />
+          <p class="merchText"><strong>Prijs:</strong> €9,99</p>
+          <p class="merchText">
+            <strong>Maat:</strong>
+            <select name="maat" class="optie">
+              <option value="180ml">S (35-38)</option>
+              <option value="220ml">M (39-41)</option>
+              <option value="300ml">L (42-44)</option>
+            </select>
+          </p>
+          <p class="merchText">Op voorraad</p>
+          <button onclick="winkelmand()">Toevoegen aan winkelmandje</button>
+        </li>
+        <li class="card">
+          <img
+            class="thumbnail"
+            src="images/stickers.jpg"
+            alt="Afbeelding van stickers met het logo van Het Rampen Dossier en de tekst Het Rampen Dossier."
+          />
+          <h2 class="cardHeader">Rampen Dossier Stickerset</h2>
+          <p class="merchText"><strong>Prijs:</strong> €3,99</p>
+          <p class="merchText">
+            <strong>Afmeting:</strong>
+            <select name="afmeting" class="optie">
+              <option value="180ml">20x40mm</option>
+              <option value="220ml">40x80mm</option>
+            </select>
+          </p>
+          <p class="merchText">Op voorraad</p>
+          <button onclick="winkelmand()">Toevoegen aan winkelmandje</button>
+        </li>
+      </ul>
+    </main>
+    <footer>
+      <section>
+        <ul>
+          <li>
+            <p><strong>Volg ons!</strong></p>
+          </li>
+          <li>
+            <p>
+              Instagram:
+              <a href="https://www.instagram.com/hetrampendossier/"
+                >hetrampendossier</a
+              >
+            </p>
+          </li>
+          <li>
+            <p>X: @HetRampenDossier</p>
+          </li>
+          <li>
+            <p>Facebook: Het Rampen Dossier</p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <ul>
+          <li>
+            <p><strong>Vragen of ideeën? Neem contact met ons op!</strong></p>
+          </li>
+          <li>
+            <p>info@rampendossier.nl</p>
+          </li>
+          <li>
+            <p>Wibautstraat 2-4 1091 GM Amsterdam</p>
+          </li>
+          <li>
+            <p>020 599 5555</p>
+          </li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+</html>
